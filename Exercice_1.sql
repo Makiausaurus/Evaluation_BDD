@@ -7,7 +7,7 @@ CREATE TABLE clients (
     cli_nom VARCHAR(50) NOT NULL,
     cli_adresse VARCHAR(50) NOT NULL,
     cli_tel VARCHAR(30),
-    PRIMARY KEY(cli_num)
+    PRIMARY KEY UNIQUE (cli_num) -- UNIQUE ici ou AUTO_INCREMENT sur cli_num ou IDENTITY
 );
 
 CREATE TABLE produit (
